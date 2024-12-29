@@ -6,33 +6,133 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		26E15D302D1DAD4500CB42E2 /* PetHealthPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHealthPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		2608BC2E2D211D60004F7294 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC2D2D211D60004F7294 /* MetricCard.swift */; };
+		2608BC302D211D80004F7294 /* DocumentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC2F2D211D80004F7294 /* DocumentCard.swift */; };
+		2608BC322D211D99004F7294 /* MockDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC312D211D99004F7294 /* MockDocument.swift */; };
+		2608BC342D211EC3004F7294 /* DocumentUploadSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC332D211EC3004F7294 /* DocumentUploadSheet.swift */; };
+		2608BC362D2126ED004F7294 /* MedicalHistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC352D2126ED004F7294 /* MedicalHistoryCard.swift */; };
+		2608BC382D212710004F7294 /* CheckupRecordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC372D212710004F7294 /* CheckupRecordCard.swift */; };
+		2608BC3A2D2127F2004F7294 /* MedicalCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC392D2127F2004F7294 /* MedicalCondition.swift */; };
+		2608BC3C2D21280D004F7294 /* CheckupRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC3B2D21280D004F7294 /* CheckupRecord.swift */; };
+		2608BC3E2D21CD65004F7294 /* PetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC3D2D21CD65004F7294 /* PetEvent.swift */; };
+		2608BC412D21CE29004F7294 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC402D21CE29004F7294 /* EventRow.swift */; };
+		2608BC432D21CE50004F7294 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC422D21CE50004F7294 /* AddEventView.swift */; };
+		2608BC452D21CE72004F7294 /* PetEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608BC442D21CE72004F7294 /* PetEventViewModel.swift */; };
+		26E15D5B2D1DAF7000CB42E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E15D522D1DAF7000CB42E2 /* Preview Assets.xcassets */; };
+		26E15D5C2D1DAF7000CB42E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E15D572D1DAF7000CB42E2 /* Assets.xcassets */; };
+		26E15D5D2D1DAF7000CB42E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D582D1DAF7000CB42E2 /* ContentView.swift */; };
+		26E15D5E2D1DAF7000CB42E2 /* PetHealthProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D592D1DAF7000CB42E2 /* PetHealthProApp.swift */; };
+		26E15D6C2D1DB25F00CB42E2 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D6B2D1DB25F00CB42E2 /* Pet.swift */; };
+		26E15D702D1DB33400CB42E2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 26E15D6F2D1DB33400CB42E2 /* Kingfisher */; };
+		26E15D722D1DB39300CB42E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D712D1DB39300CB42E2 /* User.swift */; };
+		26E15D742D1DB3FA00CB42E2 /* Vaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D732D1DB3FA00CB42E2 /* Vaccination.swift */; };
+		26E15D762D1DB40F00CB42E2 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D752D1DB40F00CB42E2 /* Medication.swift */; };
+		26E15D782D1DB46700CB42E2 /* VetVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D772D1DB46700CB42E2 /* VetVisit.swift */; };
+		26E15D7A2D1DB4BA00CB42E2 /* DietaryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D792D1DB4BA00CB42E2 /* DietaryInfo.swift */; };
+		26E15D7C2D1DB77300CB42E2 /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D7B2D1DB77300CB42E2 /* EmergencyContact.swift */; };
+		26E15D7E2D1DBAE500CB42E2 /* PetHealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D7D2D1DBAE500CB42E2 /* PetHealthViewModel.swift */; };
+		26E15D802D1DBD1D00CB42E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D7F2D1DBD1D00CB42E2 /* HomeView.swift */; };
+		26E15D822D1DBD5B00CB42E2 /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D812D1DBD5B00CB42E2 /* PetCard.swift */; };
+		26E15D842D1DBD7E00CB42E2 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D832D1DBD7E00CB42E2 /* DetailRow.swift */; };
+		26E15D862D1DBD9B00CB42E2 /* AddPetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D852D1DBD9B00CB42E2 /* AddPetButton.swift */; };
+		26E15D882D1DBDB900CB42E2 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D872D1DBDB900CB42E2 /* AddPetView.swift */; };
+		26E15D8A2D1DBE8C00CB42E2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D892D1DBE8C00CB42E2 /* CalendarView.swift */; };
+		26E15D8C2D1DBF1300CB42E2 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D8B2D1DBF1300CB42E2 /* PetDetailView.swift */; };
+		26E15D8E2D1DBF2E00CB42E2 /* PetHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D8D2D1DBF2E00CB42E2 /* PetHeaderView.swift */; };
+		26E15D902D1DBF6C00CB42E2 /* PetOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D8F2D1DBF6C00CB42E2 /* PetOverviewView.swift */; };
+		26E15D922D1DBFA300CB42E2 /* PetMedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D912D1DBFA300CB42E2 /* PetMedicalView.swift */; };
+		26E15D942D1DBFD200CB42E2 /* PetRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D932D1DBFD200CB42E2 /* PetRecordsView.swift */; };
+		26E15D962D1DBFEA00CB42E2 /* PetCareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D952D1DBFEA00CB42E2 /* PetCareView.swift */; };
+		26E15D982D1DC00700CB42E2 /* GroupBoxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D972D1DC00700CB42E2 /* GroupBoxHeader.swift */; };
+		26E15D9A2D1DC01400CB42E2 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D992D1DC01400CB42E2 /* InfoRow.swift */; };
+		26E15D9C2D1DC02500CB42E2 /* VaccinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D9B2D1DC02500CB42E2 /* VaccinationRow.swift */; };
+		26E15D9E2D1DC04700CB42E2 /* MedicationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D9D2D1DC04700CB42E2 /* MedicationRow.swift */; };
+		26E15DA02D1DC06000CB42E2 /* EmergencyContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D9F2D1DC06000CB42E2 /* EmergencyContactView.swift */; };
+		26E15DA22D1DC07E00CB42E2 /* AddVaccinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15DA12D1DC07E00CB42E2 /* AddVaccinationView.swift */; };
+		26E15DA42D1DC09300CB42E2 /* AddMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15DA32D1DC09300CB42E2 /* AddMedicationView.swift */; };
+		26E15DA62D1DC0AF00CB42E2 /* AddVetVisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15DA52D1DC0AF00CB42E2 /* AddVetVisitView.swift */; };
+		26E15DAA2D1DC10A00CB42E2 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15DA92D1DC10A00CB42E2 /* FlowLayout.swift */; };
+		26E15DAE2D1DC1DC00CB42E2 /* WeightEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15DAD2D1DC1DC00CB42E2 /* WeightEntry.swift */; };
+		26E15DB02D1DC2AB00CB42E2 /* VetVisitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E15DAF2D1DC2AB00CB42E2 /* VetVisitRow.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		26E15D322D1DAD4500CB42E2 /* PetHealthPro */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PetHealthPro;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		2608BC2D2D211D60004F7294 /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
+		2608BC2F2D211D80004F7294 /* DocumentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCard.swift; sourceTree = "<group>"; };
+		2608BC312D211D99004F7294 /* MockDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDocument.swift; sourceTree = "<group>"; };
+		2608BC332D211EC3004F7294 /* DocumentUploadSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUploadSheet.swift; sourceTree = "<group>"; };
+		2608BC352D2126ED004F7294 /* MedicalHistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalHistoryCard.swift; sourceTree = "<group>"; };
+		2608BC372D212710004F7294 /* CheckupRecordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckupRecordCard.swift; sourceTree = "<group>"; };
+		2608BC392D2127F2004F7294 /* MedicalCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCondition.swift; sourceTree = "<group>"; };
+		2608BC3B2D21280D004F7294 /* CheckupRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckupRecord.swift; sourceTree = "<group>"; };
+		2608BC3D2D21CD65004F7294 /* PetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetEvent.swift; sourceTree = "<group>"; };
+		2608BC402D21CE29004F7294 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		2608BC422D21CE50004F7294 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		2608BC442D21CE72004F7294 /* PetEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetEventViewModel.swift; sourceTree = "<group>"; };
+		26E15D302D1DAD4500CB42E2 /* PetHealthPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHealthPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E15D522D1DAF7000CB42E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26E15D572D1DAF7000CB42E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26E15D582D1DAF7000CB42E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26E15D592D1DAF7000CB42E2 /* PetHealthProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthProApp.swift; sourceTree = "<group>"; };
+		26E15D6B2D1DB25F00CB42E2 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		26E15D712D1DB39300CB42E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		26E15D732D1DB3FA00CB42E2 /* Vaccination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaccination.swift; sourceTree = "<group>"; };
+		26E15D752D1DB40F00CB42E2 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		26E15D772D1DB46700CB42E2 /* VetVisit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetVisit.swift; sourceTree = "<group>"; };
+		26E15D792D1DB4BA00CB42E2 /* DietaryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryInfo.swift; sourceTree = "<group>"; };
+		26E15D7B2D1DB77300CB42E2 /* EmergencyContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
+		26E15D7D2D1DBAE500CB42E2 /* PetHealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthViewModel.swift; sourceTree = "<group>"; };
+		26E15D7F2D1DBD1D00CB42E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		26E15D812D1DBD5B00CB42E2 /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
+		26E15D832D1DBD7E00CB42E2 /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		26E15D852D1DBD9B00CB42E2 /* AddPetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetButton.swift; sourceTree = "<group>"; };
+		26E15D872D1DBDB900CB42E2 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
+		26E15D892D1DBE8C00CB42E2 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		26E15D8B2D1DBF1300CB42E2 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		26E15D8D2D1DBF2E00CB42E2 /* PetHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHeaderView.swift; sourceTree = "<group>"; };
+		26E15D8F2D1DBF6C00CB42E2 /* PetOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOverviewView.swift; sourceTree = "<group>"; };
+		26E15D912D1DBFA300CB42E2 /* PetMedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMedicalView.swift; sourceTree = "<group>"; };
+		26E15D932D1DBFD200CB42E2 /* PetRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRecordsView.swift; sourceTree = "<group>"; };
+		26E15D952D1DBFEA00CB42E2 /* PetCareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCareView.swift; sourceTree = "<group>"; };
+		26E15D972D1DC00700CB42E2 /* GroupBoxHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxHeader.swift; sourceTree = "<group>"; };
+		26E15D992D1DC01400CB42E2 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		26E15D9B2D1DC02500CB42E2 /* VaccinationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationRow.swift; sourceTree = "<group>"; };
+		26E15D9D2D1DC04700CB42E2 /* MedicationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationRow.swift; sourceTree = "<group>"; };
+		26E15D9F2D1DC06000CB42E2 /* EmergencyContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactView.swift; sourceTree = "<group>"; };
+		26E15DA12D1DC07E00CB42E2 /* AddVaccinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVaccinationView.swift; sourceTree = "<group>"; };
+		26E15DA32D1DC09300CB42E2 /* AddMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationView.swift; sourceTree = "<group>"; };
+		26E15DA52D1DC0AF00CB42E2 /* AddVetVisitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVetVisitView.swift; sourceTree = "<group>"; };
+		26E15DA92D1DC10A00CB42E2 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		26E15DAD2D1DC1DC00CB42E2 /* WeightEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntry.swift; sourceTree = "<group>"; };
+		26E15DAF2D1DC2AB00CB42E2 /* VetVisitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetVisitRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		26E15D2D2D1DAD4500CB42E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E15D702D1DB33400CB42E2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2608BC3F2D21CE10004F7294 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				2608BC402D21CE29004F7294 /* EventRow.swift */,
+				2608BC422D21CE50004F7294 /* AddEventView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
 		26E15D272D1DAD4500CB42E2 = {
 			isa = PBXGroup;
 			children = (
-				26E15D322D1DAD4500CB42E2 /* PetHealthPro */,
+				26E15D5A2D1DAF7000CB42E2 /* PetHealthPro */,
 				26E15D312D1DAD4500CB42E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +143,179 @@
 				26E15D302D1DAD4500CB42E2 /* PetHealthPro.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		26E15D512D1DAF7000CB42E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D6B2D1DB25F00CB42E2 /* Pet.swift */,
+				26E15D712D1DB39300CB42E2 /* User.swift */,
+				26E15D732D1DB3FA00CB42E2 /* Vaccination.swift */,
+				26E15D752D1DB40F00CB42E2 /* Medication.swift */,
+				26E15D772D1DB46700CB42E2 /* VetVisit.swift */,
+				26E15D792D1DB4BA00CB42E2 /* DietaryInfo.swift */,
+				26E15D7B2D1DB77300CB42E2 /* EmergencyContact.swift */,
+				26E15DAD2D1DC1DC00CB42E2 /* WeightEntry.swift */,
+				2608BC392D2127F2004F7294 /* MedicalCondition.swift */,
+				2608BC3B2D21280D004F7294 /* CheckupRecord.swift */,
+				2608BC3D2D21CD65004F7294 /* PetEvent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26E15D532D1DAF7000CB42E2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D522D1DAF7000CB42E2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26E15D542D1DAF7000CB42E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D692D1DB11300CB42E2 /* HelperViews */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		26E15D552D1DAF7000CB42E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D602D1DAFB000CB42E2 /* Authentication */,
+				26E15D652D1DB00500CB42E2 /* Calendar */,
+				26E15D642D1DAFEF00CB42E2 /* Home */,
+				26E15D612D1DAFB900CB42E2 /* Main */,
+				26E15D622D1DAFC000CB42E2 /* Menu */,
+				26E15D662D1DB01C00CB42E2 /* Pet */,
+				26E15D672D1DB0A800CB42E2 /* Settings */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26E15D562D1DAF7000CB42E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D7D2D1DBAE500CB42E2 /* PetHealthViewModel.swift */,
+				2608BC312D211D99004F7294 /* MockDocument.swift */,
+				2608BC442D21CE72004F7294 /* PetEventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		26E15D5A2D1DAF7000CB42E2 /* PetHealthPro */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D512D1DAF7000CB42E2 /* Model */,
+				26E15D552D1DAF7000CB42E2 /* View */,
+				26E15D562D1DAF7000CB42E2 /* ViewModel */,
+				26E15D542D1DAF7000CB42E2 /* Utilities */,
+				26E15D532D1DAF7000CB42E2 /* Preview Content */,
+				26E15D572D1DAF7000CB42E2 /* Assets.xcassets */,
+				26E15D592D1DAF7000CB42E2 /* PetHealthProApp.swift */,
+			);
+			path = PetHealthPro;
+			sourceTree = "<group>";
+		};
+		26E15D602D1DAFB000CB42E2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		26E15D612D1DAFB900CB42E2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D582D1DAF7000CB42E2 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		26E15D622D1DAFC000CB42E2 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		26E15D642D1DAFEF00CB42E2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D7F2D1DBD1D00CB42E2 /* HomeView.swift */,
+				26E15D812D1DBD5B00CB42E2 /* PetCard.swift */,
+				26E15D832D1DBD7E00CB42E2 /* DetailRow.swift */,
+				26E15D852D1DBD9B00CB42E2 /* AddPetButton.swift */,
+				26E15D872D1DBDB900CB42E2 /* AddPetView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		26E15D652D1DB00500CB42E2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				2608BC3F2D21CE10004F7294 /* Supporting Views */,
+				26E15D892D1DBE8C00CB42E2 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		26E15D662D1DB01C00CB42E2 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				26E15DA82D1DC0EB00CB42E2 /* SupportingViews */,
+				26E15DA72D1DC0C600CB42E2 /* AddFormViews */,
+				26E15D8B2D1DBF1300CB42E2 /* PetDetailView.swift */,
+				26E15D8F2D1DBF6C00CB42E2 /* PetOverviewView.swift */,
+				26E15D912D1DBFA300CB42E2 /* PetMedicalView.swift */,
+				26E15D932D1DBFD200CB42E2 /* PetRecordsView.swift */,
+				26E15D952D1DBFEA00CB42E2 /* PetCareView.swift */,
+				26E15D8D2D1DBF2E00CB42E2 /* PetHeaderView.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		26E15D672D1DB0A800CB42E2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		26E15D692D1DB11300CB42E2 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				26E15DA92D1DC10A00CB42E2 /* FlowLayout.swift */,
+				2608BC332D211EC3004F7294 /* DocumentUploadSheet.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		26E15DA72D1DC0C600CB42E2 /* AddFormViews */ = {
+			isa = PBXGroup;
+			children = (
+				26E15DA12D1DC07E00CB42E2 /* AddVaccinationView.swift */,
+				26E15DA32D1DC09300CB42E2 /* AddMedicationView.swift */,
+				26E15DA52D1DC0AF00CB42E2 /* AddVetVisitView.swift */,
+			);
+			path = AddFormViews;
+			sourceTree = "<group>";
+		};
+		26E15DA82D1DC0EB00CB42E2 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				26E15D972D1DC00700CB42E2 /* GroupBoxHeader.swift */,
+				26E15D992D1DC01400CB42E2 /* InfoRow.swift */,
+				26E15D9B2D1DC02500CB42E2 /* VaccinationRow.swift */,
+				26E15D9D2D1DC04700CB42E2 /* MedicationRow.swift */,
+				26E15D9F2D1DC06000CB42E2 /* EmergencyContactView.swift */,
+				26E15DAF2D1DC2AB00CB42E2 /* VetVisitRow.swift */,
+				2608BC2D2D211D60004F7294 /* MetricCard.swift */,
+				2608BC2F2D211D80004F7294 /* DocumentCard.swift */,
+				2608BC352D2126ED004F7294 /* MedicalHistoryCard.swift */,
+				2608BC372D212710004F7294 /* CheckupRecordCard.swift */,
+			);
+			path = SupportingViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +333,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				26E15D322D1DAD4500CB42E2 /* PetHealthPro */,
-			);
 			name = PetHealthPro;
 			packageProductDependencies = (
+				26E15D6F2D1DB33400CB42E2 /* Kingfisher */,
 			);
 			productName = PetHealthPro;
 			productReference = 26E15D302D1DAD4500CB42E2 /* PetHealthPro.app */;
@@ -94,6 +365,10 @@
 			);
 			mainGroup = 26E15D272D1DAD4500CB42E2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				26E15D6D2D1DB30600CB42E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				26E15D6E2D1DB33400CB42E2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 26E15D312D1DAD4500CB42E2 /* Products */;
 			projectDirPath = "";
@@ -109,6 +384,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E15D5B2D1DAF7000CB42E2 /* Preview Assets.xcassets in Resources */,
+				26E15D5C2D1DAF7000CB42E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +396,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2608BC302D211D80004F7294 /* DocumentCard.swift in Sources */,
+				26E15D722D1DB39300CB42E2 /* User.swift in Sources */,
+				2608BC322D211D99004F7294 /* MockDocument.swift in Sources */,
+				26E15D742D1DB3FA00CB42E2 /* Vaccination.swift in Sources */,
+				26E15D8A2D1DBE8C00CB42E2 /* CalendarView.swift in Sources */,
+				26E15D7E2D1DBAE500CB42E2 /* PetHealthViewModel.swift in Sources */,
+				26E15D7C2D1DB77300CB42E2 /* EmergencyContact.swift in Sources */,
+				26E15D902D1DBF6C00CB42E2 /* PetOverviewView.swift in Sources */,
+				26E15DAE2D1DC1DC00CB42E2 /* WeightEntry.swift in Sources */,
+				26E15DAA2D1DC10A00CB42E2 /* FlowLayout.swift in Sources */,
+				26E15DA22D1DC07E00CB42E2 /* AddVaccinationView.swift in Sources */,
+				2608BC382D212710004F7294 /* CheckupRecordCard.swift in Sources */,
+				26E15D882D1DBDB900CB42E2 /* AddPetView.swift in Sources */,
+				26E15D8C2D1DBF1300CB42E2 /* PetDetailView.swift in Sources */,
+				26E15D7A2D1DB4BA00CB42E2 /* DietaryInfo.swift in Sources */,
+				2608BC3A2D2127F2004F7294 /* MedicalCondition.swift in Sources */,
+				2608BC3E2D21CD65004F7294 /* PetEvent.swift in Sources */,
+				26E15D9C2D1DC02500CB42E2 /* VaccinationRow.swift in Sources */,
+				26E15DA42D1DC09300CB42E2 /* AddMedicationView.swift in Sources */,
+				26E15D982D1DC00700CB42E2 /* GroupBoxHeader.swift in Sources */,
+				26E15D9E2D1DC04700CB42E2 /* MedicationRow.swift in Sources */,
+				2608BC362D2126ED004F7294 /* MedicalHistoryCard.swift in Sources */,
+				26E15D802D1DBD1D00CB42E2 /* HomeView.swift in Sources */,
+				26E15D6C2D1DB25F00CB42E2 /* Pet.swift in Sources */,
+				26E15DA02D1DC06000CB42E2 /* EmergencyContactView.swift in Sources */,
+				26E15D5D2D1DAF7000CB42E2 /* ContentView.swift in Sources */,
+				26E15DB02D1DC2AB00CB42E2 /* VetVisitRow.swift in Sources */,
+				26E15D8E2D1DBF2E00CB42E2 /* PetHeaderView.swift in Sources */,
+				2608BC3C2D21280D004F7294 /* CheckupRecord.swift in Sources */,
+				26E15D762D1DB40F00CB42E2 /* Medication.swift in Sources */,
+				26E15DA62D1DC0AF00CB42E2 /* AddVetVisitView.swift in Sources */,
+				26E15D842D1DBD7E00CB42E2 /* DetailRow.swift in Sources */,
+				26E15D782D1DB46700CB42E2 /* VetVisit.swift in Sources */,
+				2608BC342D211EC3004F7294 /* DocumentUploadSheet.swift in Sources */,
+				2608BC452D21CE72004F7294 /* PetEventViewModel.swift in Sources */,
+				2608BC412D21CE29004F7294 /* EventRow.swift in Sources */,
+				26E15D5E2D1DAF7000CB42E2 /* PetHealthProApp.swift in Sources */,
+				2608BC2E2D211D60004F7294 /* MetricCard.swift in Sources */,
+				26E15D822D1DBD5B00CB42E2 /* PetCard.swift in Sources */,
+				26E15D922D1DBFA300CB42E2 /* PetMedicalView.swift in Sources */,
+				2608BC432D21CE50004F7294 /* AddEventView.swift in Sources */,
+				26E15D9A2D1DC01400CB42E2 /* InfoRow.swift in Sources */,
+				26E15D862D1DBD9B00CB42E2 /* AddPetButton.swift in Sources */,
+				26E15D942D1DBFD200CB42E2 /* PetRecordsView.swift in Sources */,
+				26E15D962D1DBFEA00CB42E2 /* PetCareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +577,13 @@
 				DEVELOPMENT_TEAM = MGCAWMJL7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +608,13 @@
 				DEVELOPMENT_TEAM = MGCAWMJL7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +650,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26E15D6D2D1DB30600CB42E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		26E15D6E2D1DB33400CB42E2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26E15D6F2D1DB33400CB42E2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26E15D6E2D1DB33400CB42E2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26E15D282D1DAD4500CB42E2 /* Project object */;
 }
