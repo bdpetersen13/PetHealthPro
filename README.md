@@ -4,6 +4,9 @@ A pet health management app designed to centralize and streamline pet care for e
 
 ## Concept
 Pet Health Pro is designed to provide pet owners with a convenient hub to track their pets' health, schedule care activities, and receive tailored insights. The app combines intuitive features and analytics to help pet owners make informed decisions about their pets’ well-being
+
+![Simulator Screen Recording - iPhone 16 Pro - 2024-12-29 at 13 16 48](https://github.com/user-attachments/assets/98d5dd32-965c-4037-8b4d-6f22c0c07dee)
+
 ## Core Features
 
 ### Pet Profiles 🐕
